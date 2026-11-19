@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 13 - CSS Transitions</title>
+  <style>
+    .square {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      margin: 20px;
+      font-size: 20px;
+    }
+
+    /* 方塊 1：滑鼠移入時變長 */
+    .box1 {
+      transition: width 1s ease;
+    }
+
+    .box1:hover {
+      width: 400px;
+    }
+
+    /* 方塊 2：滑鼠移入時變大 */
+    .box2 {
+      transition: width 1s ease, height 1s ease;
+    }
+
+    .box2:hover {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="square box1">1</div>
+  <div class="square box2">2</div>
+
+</body>
+</html>
